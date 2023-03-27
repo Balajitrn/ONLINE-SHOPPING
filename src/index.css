@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Add the following code at the bottom of the existing file */
+.content {
+  padding: 20px;
+}

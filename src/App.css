@@ -36,3 +36,151 @@
     transform: rotate(360deg);
   }
 }
+
+/* Pagination styles */
+.react-paginate {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.react-paginate ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.react-paginate li {
+  margin: 0 4px;
+}
+
+.react-paginate li a {
+  display: inline-block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+}
+
+.react-paginate li a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.react-paginate li.active a {
+  background-color: #007bff;
+  color: white;
+}
+
+.react-paginate li.disabled a {
+  color: #6c757d;
+  cursor: not-allowed;
+  border-color: #6c757d;
+}
+
+/* Product styles */
+
+.product h3 {
+  font-size: 1.25rem; /* Adjust the font size of the product name */
+  margin-bottom: 0.5rem;
+}
+
+.product p {
+  font-size: 1rem; /* Adjust the font size of the product description */
+  margin-bottom: 0.5rem;
+}
+
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.875rem; /* Adjust the font size of the product details */
+}
+
+/* CategoryList styles */
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  margin: 1rem;
+}
+
+/* CategoryList container styles */
+.category-list-container {
+  margin: 1rem;
+}
+
+/* ... existing styles ... */
+
+.add-to-cart {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 8px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+/* ... existing styles ... */
+
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cart li span {
+  margin-right: 1rem;
+}
+
+.cart input[type='number'] {
+  width: 60px;
+}
+  
+/* App.css */
+.header {
+  margin-top: 60px; /* Adjust this value to avoid overlapping with the fixed header */
+}
+
+/***Refactore by chat GPT ***/
+
+/* General styles */
+.App {
+  text-align: center;
+}
+
+/* ... (other existing styles) */
+
+/* Freeze header */
+.search-bar-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.search-input {
+  width: 300px;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.content-container {
+  margin-top: 100px; /* Adjust this value based on the height of your header */
+}
+
+.content {
+  margin-top: 100px; /* Adjust this value based on the height of your header */
+}
+

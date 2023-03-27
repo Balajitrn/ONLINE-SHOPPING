@@ -1,0 +1,182 @@
+/* Header.css */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  
+}
+
+.logo-container:hover .logo-image {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.header-nav a:hover,
+.cart-nav a:hover {
+  color: #064238;
+  transition: color 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #d1dce7;
+  transition: box-shadow 0.3s ease;
+}
+
+.dropdown-content {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 767px) {
+  .header-container {
+    flex-wrap: wrap;
+  }
+
+  .logo-container {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+
+
+
+  .header-nav {
+    order: 2;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .search-bar-container {
+    order: 3;
+    width: 100%;
+  }
+
+  .cart-nav {
+    order: 4;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+.logo-image {
+  height: 3rem;
+  width: auto;
+}
+
+.search-input {
+  width: 100%;
+  padding: 6px;
+  font-size: 17px;
+  border: 1px solid #ddd;
+  max-width: 400px; /* Adjust max-width if needed */
+}
+
+
+.header-nav .active {
+  color: #f04;
+}
+
+.header-nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.header-nav a.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+header {
+  background-color: #16bcea;
+  padding: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.cart-image {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #cb1818;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.horizontal-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.horizontal-list li {
+  margin-right: 15px;
+}
+
+.active {
+  color: blue;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Add this rule for nested dropdown */
+.dropdown-content .dropdown-content {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}

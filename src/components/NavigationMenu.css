@@ -1,0 +1,67 @@
+.navigation-menu {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e7e7e7;
+  }
+  
+  .navigation-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navigation-menu li {
+    margin: 0 10px;
+  }
+  
+  .navigation-menu a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navigation-menu a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .navigation-menu a.active {
+    background-color: #4caf50;
+    color: white;
+  }
+  /* Add these styles at the bottom of the existing file */
+.navigation-menu li {
+    position: relative;
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: #f8f8f8;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    min-width: 160px;
+    margin-top: 10px;
+    padding: 5px 0;
+    z-index: 1;
+  }
+  
+  .submenu li {
+    margin: 0;
+  }
+  
+  .submenu a {
+    padding: 8px 16px;
+  }
+  
+  .submenu a:hover {
+    background-color: #ddd;
+  }
+  
+  li:hover > .submenu {
+    display: block;
+  }
+  

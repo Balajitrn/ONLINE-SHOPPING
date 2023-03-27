@@ -1,0 +1,21 @@
+.header-banner {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .header-banner h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  /* Add this to your existing HeaderBanner.css */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+  
